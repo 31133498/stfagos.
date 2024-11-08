@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Fagos Multifunctional Company - Exceptional services in visa processing and automobile sales.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>St. Fagos Multifunctional Company</title>
+</head>
+<body>
+
+<!-- Navigation with Logo -->
+<!-- Navigation with Logo -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="images/logof.png" alt="St. Fagos Logo" class="logo">
+        St. Fagos
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Rest of your HTML content -->
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1>Welcome to St. Fagos Multifunctional Company</h1>
+        <p>Your trusted partner in visa processing and automobile sales.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="text-center">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p>St. Fagos Multifunctional Company is dedicated to simplifying the complexities of international travel and vehicle acquisition. Our key services include:</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Visa Processing Services</h4>
+                <ul class="list-unstyled">
+                    <li>Consultation Services</li>
+                    <li>Document Preparation</li>
+                    <li>Application Submission</li>
+                    <li>Follow-Up Services</li>
+                    <li>Advisory Services</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Automobile Sales</h4>
+                <ul class="list-unstyled">
+                    <li>Diverse Inventory</li>
+                    <li>Competitive Pricing</li>
+                    <li>Trade-In Services</li>
+                    <li>Comprehensive Vehicle History Reports</li>
+                    <li>Post-Sale Support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="text-center">
+    <div class="container">
+        <h2>Company Overview</h2>
+        <p>Founded in [Year], St. Fagos Multifunctional Company has made significant strides in the travel and automotive industries. Headquartered in [Location], we operate with a team of dedicated professionals who are experts in their respective fields. Our mission is to provide unparalleled service in visa processing and automobile sales, fostering a community of satisfied clients.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="text-center">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Connect with us on social media for any inquiries or assistance:</p>
+        
+        <!-- Social Media Icons -->
+        <div class="social-icons mt-4">
+            <a href="https://wa.me/+2348062911418" target="_blank" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_PAGE" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:your- st.fagosmfcltd@gmail.com" target="_blank" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <p class="mt-3">We look forward to assisting you with all your needs. Reach out to us anytime!</p>
+    </div>
+</section>
+ 
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2024 St. Fagos Multifunctional Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("YOUR_USER_ID");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(function() {
+                alert('Message sent successfully!');
+            }, function(error) {
+                alert('Failed to send message: ' + JSON.stringify(error));
+            });
+    });
+</script>
+</body>
+</html>
